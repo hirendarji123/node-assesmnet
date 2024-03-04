@@ -1,0 +1,90 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "sequlize-orm",
+    "dateExported": "2024-03-04T07:05:34.841Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ae30d1fb-3b51-4aab-9cc3-1d733984a7d5",
+            "colId": "1e0e1787-d1cf-4761-8f95-1d519d86fa3c",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-03-02T09:33:15.094Z",
+            "modified": "2024-03-04T06:35:58.334Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"test7@gmail.com\",\n  \"password\":\"Testing2@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6dac55f2-a531-40d8-93c0-393fd9760717",
+            "colId": "1e0e1787-d1cf-4761-8f95-1d519d86fa3c",
+            "containerId": "",
+            "name": "Verify Email",
+            "url": "http://localhost:3000/auth/verifyEmail",
+            "method": "POST",
+            "sortNum": 7500,
+            "created": "2024-03-04T05:48:59.296Z",
+            "modified": "2024-03-04T05:48:59.296Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"test4@yopmail.com\",\n  \"OTP\":\"383719\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0985271f-fa3f-4acc-8ebe-6523d9488d0c",
+            "colId": "1e0e1787-d1cf-4761-8f95-1d519d86fa3c",
+            "containerId": "",
+            "name": "SignUp",
+            "url": "http://localhost:3000/auth/signUp",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T07:50:23.468Z",
+            "modified": "2024-03-04T05:54:25.232Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"test7@gmail.com\",\n  \"password\":\"Testing2@123\",\n  \"firstName\":\"test\",\n  \"lastName\":\"testing 2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "91d0022d-585d-413c-b3fb-136c36179800",
+            "colId": "1e0e1787-d1cf-4761-8f95-1d519d86fa3c",
+            "containerId": "",
+            "name": "Make booking",
+            "url": "http://localhost:3000/booking",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-03-02T10:54:37.562Z",
+            "modified": "2024-03-04T06:54:16.607Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"customerName\":\"demo\",\n  \"customerEmail\":\"test4@yopmail.com\",\n  \"bookingDate\":\"2024-03-04 11:30:24\",\n  \"bookingType\":\"HalfDay\",\n  \"bookingSlot\":\"FirstHalf\"\n  \n  \n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
